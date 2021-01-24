@@ -1,8 +1,4 @@
-# END. Backend Developer Test
-
-The test should be completed using Laravel as it is our framework of choice for building services.
-
-_Please do not create a public repository with your test in!_
+# 2 LARAVEL REST API
 
 ## Prerequisites
 
@@ -14,7 +10,7 @@ we have also provided an [Docker Compose](https://docs.docker.com/compose/) envi
 
 - Apache
 - PHP 7.3
-- Laravel 6.4
+- Laravel 8
     - Configured via environment variables
 - MySQL 5.7
     - No persistent volume
@@ -34,24 +30,19 @@ we have also provided an [Docker Compose](https://docs.docker.com/compose/) envi
 1. Run `docker exec -it laravel-app composer install` to install laravel.
 1. Run `docker exec -it laravel-app php artisan migrate` to run the migrations.
 1. Visit `http://localhost:18080/` to see the web server.
-1. Create a pull request from your `develop` branch to the master branch.
-1. Inform us that the test is ready for review
+
 
 ## Requirements
 
 Build a basic API with that allows for rating of Sneakers
 
-The API **SHOULD** conform to modern RESTful best practices and **MUST** provide the following functionality:
+The API  conform to modern RESTful best practices and  provide the following functionality:
 
 - List, create, read, update, and delete sneakers
 - Search sneakers
 - Rate sneakers 
     - Aggregated rating on sneaker
 
-### Endpoints
-
-Your application **MUST** conform to the following structure and return the appropriate HTTP return status codes. 
-Endpoints mark as protected below **SHOULD** require authentication to view.
 
 ##### Sneakers
 
@@ -64,7 +55,7 @@ Endpoints mark as protected below **SHOULD** require authentication to view.
 | Delete | `DELETE`    | `/sneakers/{id}`        | ✓         |
 | Rate   | `POST`      | `/sneakers/{id}/rating` | ✘         |
 
-An endpoint for sneaker search **MUST** also be implemented and documented clearly.
+
 
 ### Schema
 
@@ -77,21 +68,15 @@ An endpoint for sneaker search **MUST** also be implemented and documented clear
 
 Additionally, sneakers can be rated many times from 1-5 and a rating is never overwritten.
 
-## Evaluation Criteria
 
-These are some aspects we pay particular attention to:
 
-- **MUST** write testable code and demonstrate unit testing it 
-- **MUST** seed the database
-- **SHOULD** pay attention to best security practices.
-- **SHOULD** follow SOLID principles where appropriate.
-- **MUST NOT** build a UI for this API.
+## The second API has the following key features:
 
-The following earn you bonus points:
-
-- Your answers during code review
-- An informative, detailed description in the PR
-- Following the industry standard style guide
-- A git history with clear, concise commit messages.
-- Pagination
-- Additional testing methods
+- 1.     Login and token API
+- 2.     Save a new note
+- 3.     Update a previously saved note
+- 4.     Delete a saved note
+- 5.     Archive a note
+- 6.     Unarchive a previously archived note
+- 7.     List saved notes that aren't archived
+- 8.     List notes that are archived
