@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\app",
+    "\\app\\Http",
+    "\\app\\Http\\Requests",
+    "\\app\\Models",
+    "\\database",
+    "\\database\\factories",
+    "\\database\\migrations",
+    "\\database\\seeders",
+    "\\routes"
+  ],
+  "SelectedNode": "\\app\\Http\\Controllers\\SneakerController.php",
+  "PreviewInSolutionExplorer": false
+}
